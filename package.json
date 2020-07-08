@@ -45,7 +45,7 @@
     }
   },
   "dependencies": {
-    "agora-electron-sdk": "3.0.0-build.474",
+    "agora-electron-sdk": "3.0.0-build.661",
     "electron-squirrel-startup": "^1.0.0"
   },
   "devDependencies": {

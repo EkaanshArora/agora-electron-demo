@@ -356,10 +356,10 @@ abbrev@1:
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
   integrity sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==
 
-agora-electron-sdk@latest:
-  version "3.0.0-build.474"
-  resolved "https://registry.yarnpkg.com/agora-electron-sdk/-/agora-electron-sdk-3.0.0-build.474.tgz#9e22d632eb7ecaf7029ea0989c9bbcf62d04217c"
-  integrity sha512-RGTHFekUDZ706Uhj+I23cW7mORz47E2uYHZJD36ktGpXrHIG3MYyTnpbIzUcLXYFjrN51/s5VpvuTTc+lcKTow==
+agora-electron-sdk@3.0.0-build.661:
+  version "3.0.0-build.661"
+  resolved "https://registry.yarnpkg.com/agora-electron-sdk/-/agora-electron-sdk-3.0.0-build.661.tgz#5c5757f57092f6185e13f821651efb2e269d841c"
+  integrity sha512-fxr/tjQbq+Y0faV6cppA7XrLr0e4QW9/fNnbDubNTEuxucZ/mfQCzNYz+OqXGgbjTobIkMOYtmVWpsD2sApNJA==
   dependencies:
     bluebird "^3.7.1"
     download "^7.1.0"
