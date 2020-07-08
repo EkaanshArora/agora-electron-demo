@@ -1,6 +1,14 @@
 const AgoraRtcEngine = require('agora-electron-sdk').default
 const APPID = "5c2412e4b1dd4ac89db273c928e29b4d"; //Enter App  ID here
 
+let remoteContainer= document.getElementById("remote");
+
+function addVideoStream(elementId){
+  let streamDiv=document.createElement("div"); // Create a new div for every stream
+  streamDiv.id=elementId;                       // Assigning id to div
+  // streamDiv.style.transform="rotateY(180deg)"; // Takes care of lateral inversion (mirror image)
+  remoteContainer.appendChild(streamDiv);      // Add new div to container
+}
 if (!APPID) {
   alert('Please enter APPID in src/render.jsx (line:2)');
 }
@@ -14,7 +22,8 @@ rtcEngine.on('joinedChannel', (channel, uid, elapsed) => {
 })
 
 rtcEngine.on('userJoined', (uid) => {
-  let remoteVideoContainer = document.querySelector('#remote')
+  addVideoStream(String(uid));
+  let remoteVideoContainer = document.getElementById(String(uid));
   rtcEngine.setupViewContentMode(uid, 1);
   rtcEngine.subscribe(uid, remoteVideoContainer)
 })
